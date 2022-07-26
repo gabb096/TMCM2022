@@ -1,4 +1,4 @@
-#N canvas 115 25 1197 747 12;
+#N canvas 83 25 1197 747 12;
 #X obj 50 8 notein 1;
 #X obj 35 203 inlet;
 #X text 463 221 Decay;
