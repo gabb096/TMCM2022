@@ -1,0 +1,18 @@
+#N canvas 391 186 450 300 12;
+#X obj 116 207 vline~;
+#X obj 116 256 outlet~;
+#X obj 131 48 inlet attack time;
+#X obj 264 48 inlet release time;
+#X obj 26 48 inlet trigger;
+#X obj 26 77 trigger b b;
+#X obj 78 141 pack 1 f;
+#X obj 152 141 pack 0 20 f;
+#X connect 0 0 1 0;
+#X connect 2 0 6 1;
+#X connect 2 0 7 2;
+#X connect 3 0 7 1;
+#X connect 4 0 5 0;
+#X connect 5 0 7 0;
+#X connect 5 1 6 0;
+#X connect 6 0 0 0;
+#X connect 7 0 0 0;
