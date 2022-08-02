@@ -70,8 +70,8 @@ only if its selector switch has been pressed., f 31;
 #X obj 871 615 / 127;
 #X obj 143 220 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
-#X obj 928 137 loadbang;
-#X msg 928 165 127;
+#X msg 927 165 127;
+#X obj 927 136 loadbang;
 #X connect 0 0 4 0;
 #X connect 0 1 4 1;
 #X connect 1 0 16 0;
@@ -146,5 +146,5 @@ only if its selector switch has been pressed., f 31;
 #X connect 65 0 31 0;
 #X connect 66 0 23 1;
 #X connect 67 0 5 0;
-#X connect 68 0 69 0;
-#X connect 69 0 39 0;
+#X connect 68 0 39 0;
+#X connect 69 0 68 0;
