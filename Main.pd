@@ -1,4 +1,4 @@
-#N canvas 185 25 1038 615 12;
+#N canvas 146 25 570 615 12;
 #X obj 81 19 notein 1;
 #X obj 323 101 sel 127;
 #X obj 81 223 pack, f 41;
@@ -17,8 +17,8 @@
 #000000 0 1;
 #X obj 360 185 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
-#X obj 135 458 +~;
-#X obj 135 489 dac~;
+#X obj 46 548 +~;
+#X obj 46 579 dac~;
 #X msg 81 181 82;
 #X msg 141 181 83;
 #X msg 202 181 84;
@@ -29,15 +29,15 @@
 #X obj 11 80 loadbang;
 #X msg 11 109 0;
 #X obj 81 251 LedOnOff;
-#X obj 135 400 inst/kick~;
-#X obj 227 401 inst/snare~;
-#X obj 328 401 inst/hitHat~;
-#X obj 436 401 inst/bass~;
-#X text 166 457 Aggiungere distorsione sulla batteria;
-#X obj 23 338 seq/sequencer, f 15;
-#X obj 23 307 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#X obj 46 460 inst/kick~;
+#X obj 138 461 inst/snare~;
+#X obj 239 461 inst/hitHat~;
+#X obj 433 484 inst/bass~;
+#X text 77 547 Aggiungere distorsione sulla batteria;
+#X obj 46 356 seq/sequencer, f 15;
+#X obj 46 325 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
-#X floatatom 125 296 5 1 240 2 BPM - - 0;
+#X floatatom 148 314 5 1 240 2 BPM - - 0;
 #X connect 0 0 3 0;
 #X connect 0 1 3 1;
 #X connect 1 0 20 4;
@@ -60,7 +60,6 @@
 #X connect 11 0 18 0;
 #X connect 12 0 2 1;
 #X connect 12 0 19 0;
-#X connect 12 0 28 2;
 #X connect 13 0 14 0;
 #X connect 13 0 14 1;
 #X connect 15 0 2 0;
