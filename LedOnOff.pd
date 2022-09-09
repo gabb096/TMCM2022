@@ -1,4 +1,4 @@
-#N canvas 30 25 1199 747 12;
+#N canvas 373 25 481 394 12;
 #X obj 139 4 inlet;
 #X obj 21 192 noteout;
 #X obj 21 41 route reset;
@@ -22,6 +22,8 @@
 #X floatatom 389 155 5 0 0 0 - - - 0;
 #X msg 430 154 1;
 #X obj 113 110 loadbang;
+#X text 31 305 As the As the name suggests \, this patch is responsible
+for turning the LEDs on and off.;
 #X connect 0 0 2 0;
 #X connect 2 0 11 0;
 #X connect 2 1 10 0;
