@@ -9,21 +9,22 @@
 #X msg 361 189 0, f 2;
 #X msg 305 245 get \$1 1;
 #X msg 264 98 -1;
-#X obj 218 420 expr $f1 + 8*(4 - 2 * imodf($f1/8));
-#X obj 297 477 pack f f;
-#X obj 297 537 outlet;
-#X floatatom 218 446 5 0 0 0 - - - 0;
+#X obj 242 372 expr $f1 + 8*(4 - 2 * imodf($f1/8));
+#X obj 297 411 pack f f;
+#X obj 297 440 outlet;
+#X floatatom 242 421 5 0 0 0 - - - 0;
 #X msg 198 108 0;
 #X obj 274 173 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
-#X obj 242 355 f, f 5;
+#X obj 242 343 f, f 5;
 #X msg 274 304 0;
-#X obj 301 355 + 1;
+#X obj 301 343 + 1;
 #X msg 74 33 symbol seq1;
 #X obj 218 272 sel 31;
 #X obj 198 69 t b b b s, f 29;
 #X obj 274 272 t b;
 #X obj 318 304 t b f;
+#X floatatom 365 343 5 0 0 0 - - - 0;
 #X connect 0 0 21 0;
 #X connect 1 0 4 0;
 #X connect 2 0 5 0;
@@ -39,8 +40,8 @@
 #X connect 8 0 3 0;
 #X connect 9 0 1 1;
 #X connect 10 0 13 0;
+#X connect 10 0 11 0;
 #X connect 11 0 12 0;
-#X connect 13 0 11 0;
 #X connect 14 0 1 0;
 #X connect 15 0 22 0;
 #X connect 16 0 18 0;
@@ -57,3 +58,4 @@
 #X connect 22 0 17 0;
 #X connect 23 0 16 0;
 #X connect 23 1 11 1;
+#X connect 23 1 24 0;
