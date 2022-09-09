@@ -25,7 +25,7 @@
 #X obj 268 46 pack f f;
 #X msg 817 136 127;
 #X msg 712 136 100;
-#X obj 353 106 == 5;
+#X obj 353 66 == 5;
 #X msg 399 136 0;
 #X text 426 9 This allows the parameters of the bass to be changed
 only if its selector switch has been pressed. They can be restored
@@ -144,6 +144,23 @@ to the default values by pressing SHIFT, f 99;
 #X floatatom 875 233 5 0 0 0 - - - 0;
 #X floatatom 980 233 5 0 0 0 - - - 0;
 #X floatatom 1085 233 5 0 0 0 - - - 0;
+#N canvas 261 197 450 300 start 0;
+#X obj 108 88 loadbang;
+#X obj 108 123 t b b b, f 14;
+#X msg 203 157 1;
+#X obj 155 161 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X msg 108 158 0;
+#X obj 108 202 outlet;
+#X obj 182 202 outlet;
+#X connect 0 0 1 0;
+#X connect 1 0 4 0;
+#X connect 1 1 3 0;
+#X connect 1 2 2 0;
+#X connect 2 0 5 0;
+#X connect 3 0 6 0;
+#X connect 4 0 5 0;
+#X restore 325 90 pd start;
 #X connect 1 0 0 0;
 #X connect 2 0 5 0;
 #X connect 2 0 6 0;
@@ -195,8 +212,8 @@ to the default values by pressing SHIFT, f 99;
 #X connect 36 0 77 0;
 #X connect 36 0 85 0;
 #X connect 37 0 61 0;
-#X connect 40 0 32 1;
 #X connect 40 0 44 0;
+#X connect 40 0 32 1;
 #X connect 41 0 40 0;
 #X connect 41 1 40 1;
 #X connect 42 0 40 0;
@@ -254,3 +271,5 @@ to the default values by pressing SHIFT, f 99;
 #X connect 93 0 31 0;
 #X connect 94 0 36 0;
 #X connect 95 0 4 0;
+#X connect 96 0 8 0;
+#X connect 96 1 21 0;
