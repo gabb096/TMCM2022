@@ -474,23 +474,23 @@ and saves it in the relevant array, f 98;
 #X restore 449 23 graph;
 #X obj 105 371 outlet;
 #X msg 449 84 \; seq0 const 0;
-#N canvas 55 25 1112 746 allSequences 0;
+#N canvas 55 25 1112 746 allSequences 1;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array seq1-1 32 float 3;
-#A 0 3 0 0 0 0 0 0 0 3 0 0 0 0 0 0 0 3 0 0 0 0 0 0 0 3 0 0 0 0 0 0
+#A 0 3 0 0 0 0 0 0 0 3 0 0 3 0 0 0 0 3 0 0 0 0 0 0 0 3 0 3 0 0 0 0
 0;
 #X coords 0 5 32 0 224 50 1 0 0;
 #X restore 27 24 graph;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array seq2-1 32 float 3;
-#A 0 3 0 0 0 3 0 0 0 3 0 0 0 3 0 0 0 3 0 0 0 3 0 0 0 3 0 0 0 3 0 0
-0;
+#A 0 0 0 0 0 3 0 0 0 0 0 0 0 3 3 0 0 0 0 0 0 3 0 0 0 0 3 0 0 3 3 3
+3;
 #X coords 0 5 32 0 224 50 1 0 0;
 #X restore 27 157 graph;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array seq3-1 32 float 3;
-#A 0 0 3 3 3 0 3 3 3 0 3 3 3 0 3 3 3 0 3 3 3 0 3 3 3 0 3 3 3 0 3 3
-3;
+#A 0 0 0 3 0 0 3 3 3 0 0 3 0 0 3 3 3 0 0 3 0 0 3 3 3 0 0 3 0 0 0 0
+0;
 #X coords 0 5 32 0 224 50 1 0 0;
 #X restore 27 291 graph;
 #N canvas 0 22 450 278 (subpatch) 0;
@@ -531,8 +531,8 @@ and saves it in the relevant array, f 98;
 #X restore 261 423 graph;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array seq5-2 32 float 3;
-#A 0 3.043 0 3.055 0 3.043 0 0 0 3.043 0 0 3.055 0 3.055 0 0 3.043
-0 3.055 0 3.043 0 0 0 3.043 0 0 0 0 3.055 3.055 0;
+#A 0 3.029 0 0 0 3.033 0 0 0 3.031 0 0 0 3.033 0 0 0 3.026 0 0 0 3.033
+0 0 0 3.033 0 0 3.029 0 3.035 0 0;
 #X coords 0 4 32 0 224 50 1 0 0;
 #X restore 261 555 graph;
 #N canvas 0 22 450 278 (subpatch) 0;
