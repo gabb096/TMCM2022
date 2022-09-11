@@ -8,19 +8,19 @@
 #X obj 13 195 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
 #X obj 13 297 sel 1 2 3 4, f 87;
-#X obj 80 11 notein 1;
-#X obj 80 40 pack f f;
-#X obj 143 108 loadbang;
-#X obj 213 162 inst/ctrl 48;
-#X obj 213 137 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#X obj 82 11 notein 1;
+#X obj 82 40 pack f f;
+#X obj 145 108 loadbang;
+#X obj 215 162 inst/ctrl 48;
+#X obj 215 137 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
-#X obj 213 108 == 0;
-#X obj 80 261 t f f f f f, f 88;
-#X obj 213 191 expr imodf($f1/127*160+40);
-#X obj 80 69 softKeySelector;
-#X floatatom 90 108 5 0 0 0 - - - 0;
-#X obj 204 505 /~ 4;
-#X msg 143 162 40;
+#X obj 215 108 == 0;
+#X obj 82 261 t f f f f f, f 88;
+#X obj 215 191 expr imodf($f1/127*160+40);
+#X obj 82 69 softKeySelector;
+#X floatatom 92 108 5 0 0 0 - - - 0;
+#X obj 164 415 /~ 4;
+#X msg 145 162 40;
 #X connect 1 0 18 0;
 #X connect 2 0 18 0;
 #X connect 3 0 18 0;
