@@ -102,7 +102,7 @@ To return to the default parameters press the `SHIFT` button.
 4. EQ High Frequencies
 5. Compressor 
 6. Glitch
-7. -------
+7. / /
 8. Volume
 
 ## The patch
@@ -115,7 +115,7 @@ First we notice the [softKeySelector] object, whose job is to return a number fr
  * 1 = Kick
  * 2 = Snare
  * 3 = Hithat
- * 4 = -------------
+ * 4 = / / /
  * 5 = Bass Synth
 
 This number is passed to each instrument. 

@@ -105,7 +105,7 @@ Per tornare ai parametri di default premere `SHIFT`.
 4. EQ Alte Frequenze
 5. Compressore 
 6. Glitch
-7. -------
+7. / /
 8. Volume
 
 
@@ -119,7 +119,7 @@ Per prima cosa notiamo l'oggetto [softKeySelector], il cui compito è quello di 
  * 1 = Gran cassa
  * 2 = Rullante
  * 3 = Piatto Hithat
- * 4 = -------------
+ * 4 = / / /
  * 5 = Basso Synth
 
 Questo numero viene passato ad ogni strumento. Quando lo strumento è selezionato si possono utilizzare i pomelli per modificarne i parametri.
