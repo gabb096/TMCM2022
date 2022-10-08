@@ -32,7 +32,7 @@ Connect the keyboard to the computer, open the "main.pd" patch, and select the "
 Now everything is ready to play.
 
 Select one of the instruments using the keys marked as `Instrument Selector` in the previous image. 
-The first three are percussive sounds, in order we have Kick, Snare, HitHat, the fourth is a `?? ??` and they all work the same way. To insert or remove a note ON/OFF simply press on one of the buttons on the step sequencer and the corresponding LED will indicate whether the note has been added or removed.
+The first three are percussive sounds, in order we have Kick, Snare, HitHat, Ride and they all work the same way. To insert or remove a note ON/OFF simply press on one of the buttons on the step sequencer and the corresponding LED will indicate whether the note has been added or removed.
 The fifth sound is a synth bass, by default pressing on a sequencer button inserts an OFF note, to insert an ON+PITCH note you must hold down the corresponding key on the keyboard.
 
 Once we have selected the sound and entered the sequence we can create more by changing patterns, to do this just press one of the buttons marked as `pattern selector` in the picture. 
@@ -55,8 +55,8 @@ To return to the default parameters press the `SHIFT` button.
 3. Attack
 4. Decay
 5. LowPass Filter Cutoff
-6. Saturation
-7. Empty
+6. Wavefold distortion amount
+7. Noise amount
 8. Volume
 
 #### The Snare
@@ -65,9 +65,9 @@ To return to the default parameters press the `SHIFT` button.
 2. Pitch
 3. Decay
 4. Noise
-5. Saturation
-6. Compression
-7. LowPass Filter Cutoff
+5. LowPass Filter Cutoff
+6. Saturation
+7. Empty
 8. Volume
 
 #### The HitHat
@@ -75,21 +75,33 @@ To return to the default parameters press the `SHIFT` button.
 1. Attack
 2. Decay
 3. HiPass Filter Cutoff
-4. Empty
-5. Empty
+4. Random Amount
+5. Random Seed
 6. Empty
 7. Empty
 8. Volume
+
+#### The Ride
+
+1. Tune
+2. LowPass Filter Cutoff 
+3. HiPass Filter Cutoff
+4. Decay
+5. Reverb
+6. Empty
+7. Empty
+8. Volume
+
 
 #### The Bass
 
 1. Attack
 2. Hold
 3. Decay
-4. Drive
-5. Chorus Amount
-6. Chorus Mix
-7. LowPass Filter Cutoff
+4. Wavefold Amount
+5. LowPass Filter Cutoff
+6. Reverb
+7. Keyboard On/Off
 8. Volume
 
 
@@ -97,12 +109,12 @@ To return to the default parameters press the `SHIFT` button.
 
 ####TO DO
 1. BPM
-2. EQ Low Frequencies
-3. EQ Medium Frequencies
-4. EQ High Frequencies
-5. Compressor 
-6. Glitch
-7. / /
+2. HighPass Filter Cutoff
+3. LowPass Filter Cutoff
+4. / /
+5. Jump steps 
+6. Repeat step
+7. Saturation
 8. Volume
 
 ## The patch
@@ -115,7 +127,7 @@ First we notice the [softKeySelector] object, whose job is to return a number fr
  * 1 = Kick
  * 2 = Snare
  * 3 = Hithat
- * 4 = / / /
+ * 4 = Ride
  * 5 = Bass Synth
 
 This number is passed to each instrument. 

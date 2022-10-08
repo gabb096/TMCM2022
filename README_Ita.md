@@ -32,7 +32,7 @@ Collegare la tastiera al computer, aprire la patch "main.pd" e selezionare il co
 Ora è tutto pronto per suonare.
 
 Selezionare uno degli strumenti tramite i tasti segnati come `Instrument Selector` nell'imagine precedente. 
-I primi tre sono suoni percussivi, in ordine abbiamo Kick, Snare, HitHat, il quarto è un `?? ??` e funzionano tutti allo stesso modo. Per inserire o togliere una nota ON/OFF basta premere su uno dei tasti dello step sequencer e il relativo led indicherà se la nota è stata aggiunta o eliminata.
+I primi tre sono suoni percussivi, in ordine abbiamo Kick, Snare, HitHat, il quarto è un Ride e funzionano tutti allo stesso modo. Per inserire o togliere una nota ON/OFF basta premere su uno dei tasti dello step sequencer e il relativo led indicherà se la nota è stata aggiunta o eliminata.
 Il quinto suono è un basso synth, di default premere su un bottone del sequencer inserisce una nota OFF, per inserire una nota ON+PITCH bisogna tenere premuto il corrispettivo tasto sulla tastiera.
 
 Una volta selezionato il suono e inserita la sequenza possiamo crearne altre cambiando pattern, per farlo basta un dei tasti segnati come `pattern selector` nell'immagine. 
@@ -55,8 +55,8 @@ Per tornare ai parametri di default premere `SHIFT`.
 3. Attacco
 4. Decadimento
 5. Cutoff del Filtro Passa Basso
-6. Saturazione
-7. Vuoto
+6. Distorzione Wavefold
+7. Rumore
 8. Volume
 
 
@@ -66,9 +66,9 @@ Per tornare ai parametri di default premere `SHIFT`.
 2. Altezza
 3. Decadimento
 4. Rumore
-5. Saturazione
-6. Compressione
-7. Cutoff del Filtro Passa Basso
+5. Cutoff del Filtro Passa Basso
+6. Saturzione
+7. Vuoto
 8. Volume
 
 
@@ -77,35 +77,46 @@ Per tornare ai parametri di default premere `SHIFT`.
 1. Attacco
 2. Decadimento
 3. Cutoff del Filtro Passa Alto
-4. Random
-5. Vuoto
+4. Quantità del Random
+5. Seme Algoritmo Random
 6. Vuoto
 7. Vuoto
 8. Volume
 
+#### Piatto Ride
+
+1. Tonalità
+2. Cutoff del Filtro Passa Basso
+3. Cutoff del Filtro Passa Alto
+4. Decadimento
+5. Riverbero
+6. Vuoto
+7. Vuoto
+8. Volume
 
 #### Il basso
 
 1. Attacco
 2. Hold
 3. Decadimento
-4. Saturazione
-5. Quantità di Chorus
-6. Chorus Mix
-7. Cutoff del Filtro Passa Basso
+4. Quantità Wavefold
+5. Cutoff del Filtro Passa Basso
+6. Riverbero
+7. Tastiera On/Off
 8. Volume
+
 
 ### Gli effetti
 
 #### DA IMPLEMENTARE
 
 1. BPM
-2. EQ Basse Frequenze
-3. EQ Medie Frequenze
-4. EQ Alte Frequenze
-5. Compressore 
-6. Glitch
-7. / /
+2. Cutoff del Filtro Passa Alto
+3. Cutoff del Filtro Passa Basso
+4. /  / 
+5. Salta step 
+6. Ripeti step
+7. Saturazione
 8. Volume
 
 
@@ -119,7 +130,7 @@ Per prima cosa notiamo l'oggetto [softKeySelector], il cui compito è quello di 
  * 1 = Gran cassa
  * 2 = Rullante
  * 3 = Piatto Hithat
- * 4 = / / /
+ * 4 = Piatto Ride
  * 5 = Basso Synth
 
 Questo numero viene passato ad ogni strumento. Quando lo strumento è selezionato si possono utilizzare i pomelli per modificarne i parametri.
