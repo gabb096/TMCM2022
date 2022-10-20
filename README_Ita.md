@@ -101,8 +101,8 @@ Per tornare ai parametri di default premere `SHIFT`.
 3. Decadimento
 4. Quantità Wavefold
 5. Cutoff del Filtro Passa Basso
-6. Riverbero
-7. Tastiera On/Off
+6. Chorus
+7. Riverbero
 8. Volume
 
 
@@ -113,7 +113,7 @@ Per tornare ai parametri di default premere `SHIFT`.
 1. BPM
 2. Cutoff del Filtro Passa Alto
 3. Cutoff del Filtro Passa Basso
-4. /  / 
+4. Tastiera On/Off 
 5. Salta step 
 6. Ripeti step
 7. Saturazione

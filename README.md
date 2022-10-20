@@ -100,8 +100,8 @@ To return to the default parameters press the `SHIFT` button.
 3. Decay
 4. Wavefold Amount
 5. LowPass Filter Cutoff
-6. Reverb
-7. Keyboard On/Off
+6. Chorus
+7. Reverb
 8. Volume
 
 
@@ -111,8 +111,8 @@ To return to the default parameters press the `SHIFT` button.
 1. BPM
 2. HighPass Filter Cutoff
 3. LowPass Filter Cutoff
-4. / /
-5. Jump steps 
+4. Keyboard On/Off
+5. Jump step 
 6. Repeat step
 7. Saturation
 8. Volume
