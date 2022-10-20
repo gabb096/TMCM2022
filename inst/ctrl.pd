@@ -1,4 +1,4 @@
-#N canvas 508 25 772 747 12;
+#N canvas 382 25 677 300 12;
 #X obj 114 14 ctlin \$1;
 #X obj 50 243 outlet;
 #X floatatom 68 86 5 0 0 0 - - - 0;
@@ -14,6 +14,9 @@
 #X obj 194 14 inlet default;
 #X obj 194 58 t f b;
 #X msg 157 58 1;
+#X text 226 91 Here we ensure that the knob is only read when it receives
+the number 1 in the left inlet. The value associated with the knob
+is entered as an argument when creating the object.;
 #X connect 0 0 6 0;
 #X connect 0 1 2 0;
 #X connect 2 0 10 0;
