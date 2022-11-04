@@ -1,8 +1,7 @@
-# DA FINIRE
 # Trasformare una Akay APC key25 in una drum machine utilizzando pure data
 
-Questo progetto nasce come un esame per il corso di "Tecnologie per il MIDI e la Computer Music". 
-Lo scopo è quello di creare una patch pure data che fosse in grado di rendere il controller MIDI "Akay APC key25" in una vera e propria drum machine che potesse essere utilizzata senza l'ausilio dello schermo del computer che ospita la patch, ma utilizzando come input visivo i vari tasti luminosi presenti sull'unità.
+Questo progetto nasce come esame per il corso di "Tecnologie per il MIDI e la Computer Music". 
+Lo scopo è quello di creare una patch pure data che sia in grado di rendere il controller MIDI "Akay APC key25" in una vera e propria drum machine che potesse essere utilizzata senza l'ausilio dello schermo del computer che ospita la patch, ma utilizzando come input visivo i vari tasti luminosi presenti sull'unità.
 
 ---
 
@@ -12,7 +11,7 @@ Il controller Akay è composto da:
 * 40 bottoni rettangolari posizionati in una matrice 8x5;
 * 14 bottoni rotondi ;
 * 8 manopole;
-* 6 bottoni rettangolari al di sotto dei pomelli.
+* 6 bottoni rettangolari al di sotto delle manopole.
 * Una tastiera da 25 tasti.
 
 Tutti questi controlli tramite la patch pure data diventano:
@@ -32,18 +31,19 @@ Collegare la tastiera al computer, aprire la patch "main.pd" e selezionare il co
 Ora è tutto pronto per suonare.
 
 Selezionare uno degli strumenti tramite i tasti segnati come `Instrument Selector` nell'imagine precedente. 
-I primi tre sono suoni percussivi, in ordine abbiamo Kick, Snare, HitHat, il quarto è un Ride e funzionano tutti allo stesso modo. Per inserire o togliere una nota ON/OFF basta premere su uno dei tasti dello step sequencer e il relativo led indicherà se la nota è stata aggiunta o eliminata.
-Il quinto suono è un basso synth, di default premere su un bottone del sequencer inserisce una nota OFF, per inserire una nota ON+PITCH bisogna tenere premuto il corrispettivo tasto sulla tastiera.
+I primi quattro sono suoni percussivi, in ordine abbiamo Kick, Snare, HitHat e Ride e funzionano tutti allo stesso modo. Per inserire o togliere una nota ON/OFF basta premere su uno dei tasti dello step sequencer e il relativo led si illuminerà di rosso se se la nota è stata aggiunta o si spegne se la nota è stata eliminata.
+Il quinto suono è un basso synth, di default premere su un bottone del sequencer inserisce una nota OFF, per inserire una nota ON+PITCH bisogna tenere premuto il corrispettivo tasto sulla tastiera e poi premere dove posizionare la nota.
 
-Una volta selezionato il suono e inserita la sequenza possiamo crearne altre cambiando pattern, per farlo basta un dei tasti segnati come `pattern selector` nell'immagine. 
+Una volta selezionato il suono e inserita la sequenza possiamo crearne altre cambiando pattern, per farlo basta premere un dei tasti segnati come `pattern selector` nell'immagine. 
 Ci sono 8 pattern per ogni suono.
 Per sentire il pattern attualmente in modalità play pasta premere il tasto `PLAY/PAUSE`. Di default viene riprodotto il pattern #1 di ogni suono.
-Se nessuno strumento è selezionato vedremo nell'area dedicata al sequencer un led che indica a quale step ci troviamo.
+Quando la sequenza parte il passo in cui ci troviamo nello step sequencer viene illuminato di giallo.
 Per sentire un nuovo pattern, selezionare prima il suono poi contemporaneamente il tasto `STOP ALL CLIPS` e il tasto relativo al pattern.
-Per eliminare l'intero pattern premere il tasto `SUSTAIN`.
+Per svuotare l'intero pattern premere il tasto `SUSTAIN`.
 
-Quando un suono è selezionato possiamo modificarne alcuni parametri tramite le 8 manopole. 
-Ogni suono ha parametri diversi, ma tutti hanno in comune il comando del volume comandato dall'ultima manopola, posizionata nella fila in basso tutto a destra.
+Quando un suono è selezionato possiamo modificare fino a 8 parametri per personalizzare il suono, tramite le manopole. 
+Ogni suono ha parametri diversi, ma tutti hanno in comune il comando del volume posizionato sull'ultima manopola, (fila in basso tutto a destra).
+
 Per tornare ai parametri di default premere `SHIFT`.
 
 ### Parametri dei Suoni
@@ -106,9 +106,8 @@ Per tornare ai parametri di default premere `SHIFT`.
 8. Volume
 
 
-### Gli effetti
-
-#### DA IMPLEMENTARE
+#### Gli effetti
+Questi sono modificabili quando nessuno strumento è selezionato.
 
 1. BPM
 2. Cutoff del Filtro Passa Alto
@@ -152,11 +151,11 @@ Di fatto legge per ogni strumento uno degli 8 array ad esso assogiato e quando a
 Questa subpatch si occcupa completamente dell'interfaccia con l'utente.
 Ogni subpatch all'interno si occupa di una funzione specifica:
 
-* [pd instSelector]
+* **[pd instSelector]**
 Come suggerisce il nome illumina o spenge i LED adibiti al selettore di strumento quando lo strumento viene selezionato.
-* [pd stepIndicator]
+* **[pd stepIndicator]**
 Quando nessuno strumento è selezionato questa subpatch si occupa di illuminare lo step attuale della sequenza.
-* [pd sequenceInterface]
+* **[pd sequenceInterface]**
 Quando uno strumento è selezionato questa subpatch mostra il pattern selezionato accendendo i relativi LED. 
-* [pd seqNoteIn] 
+* **[pd seqNoteIn]** 
 Si occupa di scrivere negli array e accandere/spegnere le note inserite dall'utente.

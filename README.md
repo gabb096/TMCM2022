@@ -1,9 +1,7 @@
-# STILL IN PROGRESS
-
-## Turning the Akay APC key25 into a drum machine using pure data.
+# Turning the Akay APC key25 into a drum machine using pure data.
 
 This project originated as an exam for the "MIDI and Computer Music Technology" course. 
-The purpose is to create a pure data patch that was able to make the MIDI controller "Akay APC key25" into a real drum machine that could be used without the aid of the computer screen that houses the patch, but using the various lighted keys on the unit as visual input.
+The purpose was to create a pure data patch that was able to make the MIDI controller "Akay APC key25" into a real drum machine that could be used without the aid of the computer screen that houses the patch, but using the various lighted keys on the unit as visual input.
 
 ### The sounds
 The Akay controller consists of:
@@ -32,14 +30,14 @@ Connect the keyboard to the computer, open the "main.pd" patch, and select the "
 Now everything is ready to play.
 
 Select one of the instruments using the keys marked as `Instrument Selector` in the previous image. 
-The first three are percussive sounds, in order we have Kick, Snare, HitHat, Ride and they all work the same way. To insert or remove a note ON/OFF simply press on one of the buttons on the step sequencer and the corresponding LED will indicate whether the note has been added or removed.
-The fifth sound is a synth bass, by default pressing on a sequencer button inserts an OFF note, to insert an ON+PITCH note you must hold down the corresponding key on the keyboard.
+The first four are percussive sounds, in order we have Kick, Snare, HitHat, Ride and they all work the same way. To insert or remove a note ON/OFF simply press on one of the buttons on the step sequencer and the corresponding LED will indicate whether the note has been added (red light) or removed (no light).
+The fifth sound is a synth bass, by default pressing on a sequencer button inserts an OFF note, to insert an ON+PITCH note you must hold down the corresponding key on the keyboard and then press the relative sequencer button.
 
-Once we have selected the sound and entered the sequence we can create more by changing patterns, to do this just press one of the buttons marked as `pattern selector` in the picture. 
+Once we have selected the sound and entered the sequence we can create more by changing patterns, to do so just press one of the buttons marked as `pattern selector` in the picture. 
 There are 8 patterns for each sound.
-To hear the pattern currently selected press the `PLAY/PAUSE` key. 
+To hear the currently selected patterns press the `PLAY/PAUSE` key. 
 By default pattern #1 of each sound is played.
-If no instrument is selected you will see in the sequencer area an LED indicating which step the sequence is at.
+If no instrument is selected you will see in the sequencer area a yellow LED indicating which step the sequence is at.
 To hear a new pattern, first select the sound, then simultaneously press the `STOP ALL CLIPS` button and the button related to the pattern.
 To delete the selected pattern press the `SUSTAIN` key.
 
@@ -106,8 +104,8 @@ To return to the default parameters press the `SHIFT` button.
 
 
 ### The effects 
+This effects can be changed when no instrument is selected.
 
-####TO DO
 1. BPM
 2. HighPass Filter Cutoff
 3. LowPass Filter Cutoff
@@ -147,10 +145,11 @@ It actually reads for each instrument one of the 8 arrays associated with it, an
 This subpatch completely takes care of the interface with the user.
 Each subpatch inside takes care of a specific function:
 
-* [pd instSelector]
+* **[pd instSelector]**
 As the name suggests it lights or turns off the LEDs assigned to the instrument selector when the instrument is selected.
-* [pd stepIndicator]
+* **[pd stepIndicator]**
 When no instrument is selected this subpatch takes care of illuminating the current step in the sequence.
-* [pd sequenceInterface]
+* **[pd sequenceInterface]**
 When an instrument is selected this subpatch shows the selected pattern by lighting its LEDs.
-* [pd seqNoteIn] Takes care of writing to the arrays and turning on/off the notes entered by the user.
+* **[pd seqNoteIn]** 
+Takes care of writing to the arrays and turning on/off the notes entered by the user.
