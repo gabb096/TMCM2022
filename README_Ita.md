@@ -46,78 +46,22 @@ Ogni suono ha parametri diversi, ma tutti hanno in comune il comando del volume 
 
 Per tornare ai parametri di default premere `SHIFT`.
 
+Infine la patch permette di registrare sul file `DrumMachineRec.wav` la propria esibizione. 
+Per farlo basta premere una volta il tasto `REC` per far partire la registrazione per poi premerlo nuovamente quando si vuole interrompere la registrazione.
+
+
 ### Parametri dei Suoni
 
-#### Gran Cassa
-
-1. Altezza
-2. Tono
-3. Attacco
-4. Decadimento
-5. Cutoff del Filtro Passa Basso
-6. Distorzione Wavefold
-7. Rumore
-8. Volume
-
-
-#### Rullante
-
-1. Accordatura
-2. Altezza
-3. Decadimento
-4. Rumore
-5. Cutoff del Filtro Passa Basso
-6. Saturzione
-7. Vuoto
-8. Volume
-
-
-#### Piatto HitHat
-
-1. Attacco
-2. Decadimento
-3. Cutoff del Filtro Passa Alto
-4. Quantità del Random
-5. Seme Algoritmo Random
-6. Vuoto
-7. Vuoto
-8. Volume
-
-#### Piatto Ride
-
-1. Tonalità
-2. Cutoff del Filtro Passa Basso
-3. Cutoff del Filtro Passa Alto
-4. Decadimento
-5. Riverbero
-6. Vuoto
-7. Vuoto
-8. Volume
-
-#### Il basso
-
-1. Attacco
-2. Hold
-3. Decadimento
-4. Quantità Wavefold
-5. Cutoff del Filtro Passa Basso
-6. Chorus
-7. Riverbero
-8. Volume
-
-
-#### Gli effetti
-Questi sono modificabili quando nessuno strumento è selezionato.
-
-1. BPM
-2. Cutoff del Filtro Passa Alto
-3. Cutoff del Filtro Passa Basso
-4. Tastiera On/Off 
-5. Salta step 
-6. Ripeti step
-7. Saturazione
-8. Volume
-
+|Kick |Snare |HitHat |Ride |Basso |Effetti |
+|:--  |:--   |:--    |:--  |:--   |:--     |
+|Altezza |Accordatura |Attacco |Tonalità |Attacco |BPM |
+|Tono |Altezza |Decadimento |Cutoff Passa Basso |Hold |Cutoff Passa Alto |
+|Attacco |Decadimento |Cutoff Passa Alto |Cutoff Passa Alto |Decadimento |Cutoff Passa Basso |
+|Decadimento |Rumore |Quantità Random |Decadimento |Wavefolding |Tastiera ON/OFF |
+|Cutoff Passa Basso |Cutoff Passa Basso |Seme Random |Riverbero |Cutoff Passa Basso |Salta Step |
+|Wavefolding |Saturazione | // | //  |Chorus |Ripeti Step |
+|Rumore |//  | //  | //  |Riverbero |Saturazione |
+|Volume |Volume |Volume |Volume |Volume |Volume Master|
 
 ## La patch
 

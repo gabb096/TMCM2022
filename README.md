@@ -45,75 +45,21 @@ When a sound is selected we can change some of its parameters using the 8 knobs.
 Each sound has a different number of parameters, but they all have in common the volume control positioned at the last knob, located in the bottom row all the way to the right.
 To return to the default parameters press the `SHIFT` button.
 
+Finally, the patch allows you to record to the file `DrumMachineRec.wav` your performance. 
+To do this, simply press the `REC` key once to start recording and then press it again when you want to stop recording.
+
+
 ### Sounds' Parameters
-#### The Kick
-
-1. Pitch
-2. Tone
-3. Attack
-4. Decay
-5. LowPass Filter Cutoff
-6. Wavefold distortion amount
-7. Noise amount
-8. Volume
-
-#### The Snare
-
-1. Tune
-2. Pitch
-3. Decay
-4. Noise
-5. LowPass Filter Cutoff
-6. Saturation
-7. Empty
-8. Volume
-
-#### The HitHat
-
-1. Attack
-2. Decay
-3. HiPass Filter Cutoff
-4. Random Amount
-5. Random Seed
-6. Empty
-7. Empty
-8. Volume
-
-#### The Ride
-
-1. Tune
-2. LowPass Filter Cutoff 
-3. HiPass Filter Cutoff
-4. Decay
-5. Reverb
-6. Empty
-7. Empty
-8. Volume
-
-
-#### The Bass
-
-1. Attack
-2. Hold
-3. Decay
-4. Wavefold Amount
-5. LowPass Filter Cutoff
-6. Chorus
-7. Reverb
-8. Volume
-
-
-### The effects 
-This effects can be changed when no instrument is selected.
-
-1. BPM
-2. HighPass Filter Cutoff
-3. LowPass Filter Cutoff
-4. Keyboard On/Off
-5. Jump step 
-6. Repeat step
-7. Saturation
-8. Volume
+|Kick   |Snare |HitHat |Ride |Bass    |Effects |
+|:--    |:--   |:--    |:--  |:--     |:--     |
+|Pitch  |Tune  |Attack |Tune | Attack |BPM     |
+|Tone   |Pitch |Decay  | LowPass Cutoff |Hold | HighPass Cutoff|
+|Attack |Decay |HighPass Cutoff | HighPass Cutoff|Decay | LowPass Cutoff|
+|Decay  |Noise |Random Amount |Decay |Wavefolding |Keyboard ON/OFF |
+|LowPass Cutoff |LowPass Cutoff |Random Seed |Reverb |LowPass Cutoff |Jump Step |
+|Wavefolding |Saturation | // | //  |Chorus |Repeat Step |
+|Noise |//  | //  | //  |Reverb |Master Saturation |
+|Volume |Volume |Volume |Volume |Volume |Master Volume |
 
 ## The patch
 
