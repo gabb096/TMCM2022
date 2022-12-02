@@ -59,7 +59,7 @@ Per farlo basta premere una volta il tasto `REC` per far partire la registrazion
 |Attacco |Decadimento |Cutoff Passa Alto |Cutoff Passa Alto |Decadimento |Cutoff Passa Basso |
 |Decadimento |Rumore |Quantità Random |Decadimento |Wavefolding |Tastiera ON/OFF |
 |Cutoff Passa Basso |Cutoff Passa Basso |Seme Random |Riverbero |Cutoff Passa Basso |Salta Step |
-|Wavefolding |Saturazione | // | //  |Chorus |Ripeti Step |
+|Wavefolding |Saturazione | // | //  |Chorus |Random Step |
 |Rumore |//  | //  | //  |Riverbero |Saturazione |
 |Volume |Volume |Volume |Volume |Volume |Volume Master|
 

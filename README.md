@@ -57,7 +57,7 @@ To do this, simply press the `REC` key once to start recording and then press it
 |Attack |Decay |HighPass Cutoff | HighPass Cutoff|Decay | LowPass Cutoff|
 |Decay  |Noise |Random Amount |Decay |Wavefolding |Keyboard ON/OFF |
 |LowPass Cutoff |LowPass Cutoff |Random Seed |Reverb |LowPass Cutoff |Jump Step |
-|Wavefolding |Saturation | // | //  |Chorus |Repeat Step |
+|Wavefolding |Saturation | // | //  |Chorus |Random Step |
 |Noise |//  | //  | //  |Reverb |Master Saturation |
 |Volume |Volume |Volume |Volume |Volume |Master Volume |
 
